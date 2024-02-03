@@ -5,7 +5,7 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
 
 function Planet() {
   const modelRef = useRef();
-  const gltf = useLoader(GLTFLoader, "/earth.glb");
+  const gltf = useLoader(GLTFLoader, "./earth.glb");
 
   // Устанавливаем скорость вращения
   const rotationSpeed = 0.002;

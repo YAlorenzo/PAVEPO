@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Input from "./Input";
+import { radioActiv, radioPass } from "../assets";
 
 function Contact() {
   const [contactType, setContactType] = useState("email"); // Состояние для хранения выбранного типа контакта
@@ -43,9 +44,9 @@ function Contact() {
                   />
                   <span className="mr-2">
                     {contactType === "email" ? (
-                      <img src="/radioActiv.svg" alt="icon" />
+                      <img src={radioActiv} alt="icon" />
                     ) : (
-                      <img src="/radioPass.svg" alt="icon" />
+                      <img src={radioPass} alt="icon" />
                     )}
                   </span>
                   Email
@@ -65,9 +66,9 @@ function Contact() {
                   />
                   <span className="mr-2">
                     {contactType === "telegram" ? (
-                      <img src="/radioActiv.svg" alt="icon" />
+                      <img src={radioActiv} alt="icon" />
                     ) : (
-                      <img src="/radioPass.svg" alt="icon" />
+                      <img src={radioPass} alt="icon" />
                     )}
                   </span>
                   Telegram

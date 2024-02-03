@@ -3,6 +3,7 @@ import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { scob, scob2 } from "../assets";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -47,12 +48,12 @@ function Text() {
       <div className="container mx-auto">
         <div className="relative max-w-[80%] contText sm:max-w-[578px] md:max-w-[870px] mx-auto flex items-center justify-between">
           <img
-            src="/scob.svg"
+            src={scob}
             alt="icon"
             className="absolute textIcon1 w-[24px] md:w-[40px] top-0 -left-10 md:-left-0"
           />
           <img
-            src="/scob2.svg"
+            src={scob2}
             alt="icon"
             className="absolute textIcon2 w-[24px]  md:w-[40px] bottom-0 -right-10 md:-right-0"
           />

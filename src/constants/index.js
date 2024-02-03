@@ -1,3 +1,5 @@
+import { galleryImg1, galleryImg2 } from "../assets";
+
 export const headerNav = [
   {
     id: "1",
@@ -84,7 +86,7 @@ export const gallery = [
     textTwo:
       "Our main goal is to help you overcome difficulties and go beyond the standard framework by radically improving and optimizing business processes. We strive to create an effective and efficient organization that implements advanced technologies and innovations to achieve business heights.",
     buttonText: "More",
-    img: "/galleryImg1.jpg",
+    img: galleryImg1,
     ravers: false,
   },
   {
@@ -94,7 +96,7 @@ export const gallery = [
     textTwo:
       "Our team is our main key to achieving success. We are proud of the diversity of talented professionals who work together to create innovative solutions and achieve results that exceed expectations.",
     buttonText: "Job",
-    img: "/galleryImg2.jpg",
+    img: galleryImg2,
     ravers: true,
   },
 ];

@@ -6,6 +6,7 @@ import { TextPlugin } from "gsap/TextPlugin";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { useGSAP } from "@gsap/react";
+import { lineHero } from "../assets";
 
 // Регистрация плагинов
 gsap.registerPlugin(TextPlugin);
@@ -61,7 +62,7 @@ function Hero() {
           <p className="text-xs xs:text-base font-light text-gray lowercase text"></p>
 
           <img
-            src="lineHero.svg"
+            src={lineHero}
             alt="icon"
             className="mx-auto mt-6 max-xs:hidden line"
           />

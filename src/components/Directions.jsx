@@ -3,6 +3,7 @@ import { direction } from "../constants";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { arrowButton } from "../assets";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -64,7 +65,7 @@ function Directions() {
               </p>
             </div>
             <button className="flex items-center justify-center rounded-full border-[2px] xs:border-[4px] p-5 buttDir">
-              <img src="/arrowButton.svg" alt="icon" />
+              <img src={arrowButton} alt="icon" />
             </button>
           </div>
         ))}

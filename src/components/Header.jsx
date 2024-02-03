@@ -1,6 +1,7 @@
 import { useState } from "react"
 import { headerNav } from "../constants"
 import MobileMenu from "./MobileMenu";
+import { menu } from "../assets";
 // import MenuIcon from '@mui/icons-material/Menu';
 
 function Header() {
@@ -37,7 +38,7 @@ function Header() {
             className="block sm:hidden"
             onClick={() => setToggel((prev) => !prev)}
           >
-            <img src="/menu.svg" alt="icon" className="w-[36px] xs:w-[60px]" />
+            <img src={menu} alt="icon" className="w-[36px] xs:w-[60px]" />
           </div>
         </div>
       </header>

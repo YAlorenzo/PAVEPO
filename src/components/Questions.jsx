@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { qustions } from "../constants";
+import { arrowBot, arrowTop } from "../assets";
 
 function Questions() {
   const [activeQuestion, setActiveQuestion] = useState(null);
@@ -25,9 +26,9 @@ function Questions() {
                 <div className="flex justify-between items-center">
                   <p className="text-sm xs:text-lg">{elem.qustion}</p>
                   {activeQuestion === elem.id ? (
-                    <img src="arrowTop.svg" alt="icon" className="mr-2" />
+                    <img src={arrowTop} alt="icon" className="mr-2" />
                   ) : (
-                    <img src="arrowBot.svg" alt="icon" className="mr-2" />
+                    <img src={arrowBot} alt="icon" className="mr-2" />
                   )}
                 </div>
                 <div

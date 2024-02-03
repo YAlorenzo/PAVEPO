@@ -3,6 +3,7 @@ import { gallery } from "../constants";
 import { useRef } from "react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import { arrowButton, lineGallery } from "../assets";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -66,7 +67,7 @@ function Gallery() {
             >
               <h2 className="text-xl sm:text-2xl font-bold flex items-center gap-2">
                 <img
-                  src="/lineGallery.svg"
+                  src={lineGallery}
                   alt="icon"
                   className="block md:hidden"
                 />
@@ -83,7 +84,7 @@ function Gallery() {
               <button className="text-lg border rounded-md py-[10px] px-[15px] mt-[25px] flex items-center justify-center">
                 {elem.buttonText}
                 <img
-                  src="/arrowButton.svg"
+                  src={arrowButton}
                   alt="icon"
                   className="ml-3"
                   width="12px"
