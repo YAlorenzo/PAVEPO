@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;300;400;500;700;900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #010001;
+  font-family: "Manrope", sans-serif;
+  color: white;
+}
+.container {
+  margin: 0 auto;
+  padding: 0 12px;
+}
+.section-mt {
+  @apply max-md:mt-[60px] md:mt-[120px];
+}
+.title {
+  @apply max-xs:text-xl xs:text-[25px] sm:text-5xl font-extrabold;
+}
+.faq-answer {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Анимация изменения высоты */
+}
+
+.faq-answer.open {
+  max-height: 1000px; /* Максимальная высота для открытого ответа */
+}
+@media (min-width: 1060px) {
+  .center_absolute_customer {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
