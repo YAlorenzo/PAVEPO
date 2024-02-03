@@ -1,11 +1,11 @@
 import { useLoader, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 import { useRef } from "react";
-import { GLTFLoader } from 'three/addons/loaders/GLTFLoader';
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader";
 
 function Planet() {
   const modelRef = useRef();
-  const gltf = useLoader(GLTFLoader, '/earth.glb');
+  const gltf = useLoader(GLTFLoader, "earth.glb");
 
   // Устанавливаем скорость вращения
   const rotationSpeed = 0.002;
