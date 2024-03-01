@@ -2,7 +2,6 @@
 function Input({ name, placeholder, w}) {
   return (
     <>
-      {/*  */}
       <label
         htmlFor={name}
         className={`text-[#F3F1EB]  ${

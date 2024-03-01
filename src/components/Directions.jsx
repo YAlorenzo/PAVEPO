@@ -17,12 +17,11 @@ function Directions() {
           scrollTrigger: {
             trigger: ".boxGG",
             end: "top top",
-                scrub: 1,
-            
+            scrub: 1,
           },
           stagger: 0.1,
           x: -500,
-          rotate: 360,
+          rotate: -360,
         });
         console.log(mm + "min-w-800");
       });
@@ -37,9 +36,8 @@ function Directions() {
           opacity: 0,
           x: -100,
           stagger: 0.1,
-          rotate: 360,
+          rotate: -360,
         });
-        console.log(mm + "max-w-799");
       });
     },
     { scope: container }

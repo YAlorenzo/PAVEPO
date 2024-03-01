@@ -26,9 +26,9 @@ function Questions() {
                 <div className="flex justify-between items-center">
                   <p className="text-sm xs:text-lg">{elem.qustion}</p>
                   {activeQuestion === elem.id ? (
-                    <img src={arrowTop} alt="icon" className="mr-2" />
-                  ) : (
                     <img src={arrowBot} alt="icon" className="mr-2" />
+                  ) : (
+                    <img src={arrowTop} alt="icon" className="mr-2" />
                   )}
                 </div>
                 <div

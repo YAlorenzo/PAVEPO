@@ -4,7 +4,7 @@ import { radioActiv, radioPass } from "../assets";
 
 function Contact() {
   const [contactType, setContactType] = useState("email"); // Состояние для хранения выбранного типа контакта
-
+  
   // Обработчик изменения типа контакта
   const handleContactTypeChange = (event) => {
     setContactType(event.target.value);
@@ -18,7 +18,6 @@ function Contact() {
           <div className="flex gap-11 md:justify-between flex-wrap items-center">
             <div className="max-xs:w-full max-md:w-[280px] md:w-[25%]">
               <input
-                type="text"
                 placeholder={`${
                   contactType === "email"
                     ? "contact@pavepo.com"
@@ -75,7 +74,8 @@ function Contact() {
                 </label>
               </div>
             </div>
-            <Input name="Name" placeholder="Paul" className="w-[25%]" />
+            <Input name="Name" placeholder="Paul" className="w-[25%]"
+              />
             <Input
               name="Company site"
               placeholder="PAVEPO.COM"

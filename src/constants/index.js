@@ -120,10 +120,10 @@ export const direction = [
 ];
 export const tasks = [
   {
-    id: "01",
-    title: "Discussion of your wishes",
+    id: "03",
+    title: "Achieving your goal",
     styles: "bottom-0 left-0",
-    text: "The most important thing for us is to understand what kind of result you want to get and offer a solution on how to make it even better.",
+    text: "We will help him get up every time he falls, so that he can then move on his own.",
   },
   {
     id: "02",
@@ -131,10 +131,10 @@ export const tasks = [
     text: "In the process, you regularly receive reports and observe how your idea begins to emerge.",
   },
   {
-    id: "03",
-    title: "Achieving your goal",
+    id: "01",
+    title: "Discussion of your wishes",
     styles: "right-0 top-0",
-    text: "We will help him get up every time he falls, so that he can then move on his own.",
+    text: "The most important thing for us is to understand what kind of result you want to get and offer a solution on how to make it even better.",
   },
 ];
 
